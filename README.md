@@ -13,3 +13,5 @@ To use the bot, users simply need to type a specific command (/lol or /lolflex) 
 Additionally, the bot can be configured to provide notifications about updates to a player's profile, such as ranking changes or promotions. This allows users to keep track of the progress of League of Legends players and stay updated with the latest information.
 
 In summary, the Python Discord bot with main integration of Slash Commands and the Riot Games API offers users the ability to fetch detailed information about League of Legends players in the ranked flex and solo/duo queues. With simple commands, users can obtain up-to-date statistics and data about player performance, making interaction with the game and the Discord community even more engaging and informative.
+
+![Captura de tela 2023-05-22 125257](https://github.com/CleytonSM/GigaBhat/assets/122110138/f98b8bbb-0caf-448a-8602-2a8aa7f1a77b)
