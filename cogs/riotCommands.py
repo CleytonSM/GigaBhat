@@ -5,12 +5,11 @@ import asyncio
 from riotwatcher import LolWatcher, ApiError
 bot = commands.Bot(command_prefix='!')
 
+api_key = league_of_legendsAPI
+my_region = 'br1' # save the region that will be used to find player's status
 
 
-
-async def lol(inter, player):
-    my_region = 'br1' # save the region that will be used to find player's status
-    api_key = league_of_legendsAPI # API key from RIOT
+async def lolSoloQueue(inter, player):
     watcher = LolWatcher(api_key)
     try:
         status = watcher.summoner.by_name(my_region, player) # player's basic status
@@ -68,12 +67,8 @@ async def lol(inter, player):
 
 
 
-@bot.slash_command(name="lolflex", description="Takes player's info from flex queue")
-async def lolflex(inter, player):
-    await inter.response.defer()
-    await asyncio.sleep(3.4)
-    my_region = 'br1'
-    api_key = league_of_legendsAPI
+
+async def lolFlex(inter, player):
     watcher = LolWatcher(api_key)
     print(player)
     try:
